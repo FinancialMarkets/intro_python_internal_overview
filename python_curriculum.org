@@ -1,0 +1,154 @@
+#+title: An Intro to Python for Finance
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+Note most other courses use stock data and create trading algorithms.  Here we are going to focus on core financial analyst tasks, e.g. what is the average PPP loan size in Texas? These questions are increasingly being answered in Python rather than Excel.
+
+We can provide exercises at the end of each session.  The students can complete these in a Jupyter notebook, and we can provide solutions.  Do we want to attempt to grade them?
+
+* Week 1 (Setup)
+
+** Session 1
+
+- Course Overview:  
+  + What we will cover in the course.  
+  + The use of Python in finance.
+
+- Python Relative to other tools.
+  + Excel
+  + Other Programming Languages
+  + Comparison with R
+  + Using Javascript for Visualization
+
+-  Python Classes and Object Orientation
+  + What is a Class
+  + Function vs Method:  methods are functions attached to a class
+
+** Session 2
+
+-  Interacting with Python
+  + Google's Colab and Jupyter
+    - Introduction to markdown
+    - Installing and loading packages.
+    - Sharing notebooks
+  + Locally
+    - The REPL
+    - As a script file
+
+
+** Session 3
+
+The Python ecosystem.
+
+-  An Introduction to Useful Packages:
+  + [[https://pandas.pydata.org/][Pandas]]
+  + [[https://numpy.org/][Numpy]]
+  + Scipy and Scikit Learn
+  + Pytorch
+  + Tensorflow and Keras 
+
+- Finding Packages
+  + pip
+
+- Python Packages
+  + Extending the core language
+  + Our most used packages.
+  + +Installing and Loading.+ ^ already in session 2
+  + How to call methods/functions from a package.
+
+- Creating your own functions?
+
+
+* Week 2 (Pandas and Data Description)
+Get spreadsheet type data and perform a corporate finance related task.
+** Session 1
+- An intro to Pandas
+- Reading csv and excel files.
+  + Locally and over the web.
+- Inspecting the objects
+- Determining dataframe size and the column types.
+- Adding new columns
+
+*** Exercise: Is there a correlation between industry institutional ownership and return on equity?
+
+** Session 2
+
+- Summary Statistics
+- Subsetting data
+- Pivot Tables
+
+*** Exercise: PPP Loan Statistics by State
+*** Alternative: What is the average price at which a power plant sells electricity?
+
+** Session 3
+
+- Creating our own functions.
+- Time value of money calculations.
+- Should we go with the full set of steps to create the PPP data set?
+
+Connecting to databases here?
+
+*** Exercise: What is the NPV of a Power Plant over a Year?
+
+
+
+* Week 3 (Numpy/Scipy and APIs)
+  
+Get data from APIs and use for a somewhat more investments focused exercise.
+
+** Session 1
+
+- An introduction to Application Programming Interfaces (APIs) and online
+  data
+  + Example: Coinbase API
+  + Example: Interactive Brokers API
+  + EIA API.
+- Connecting to databases.
+
+*** Exercise: Markowitz mean-variance portfolio optimization.
+
+** Session 2
+
+- Example: Simple Regression, the CAPM.
+- Make it better with pytorch/pyro and the Kalman filter.
+
+*** Exercise: 
+
+#+begin_comment
+- Example: Classification of Failed/Acquired Banks via Neural Network
+#+end_comment
+
+** Session 3
+
+- Visualization:
+  + Matplotlib
+  + Seaborn
+  + Plotly
+  + ggplot (using plotnine library)
+
+*** Exercise: 
+
+* Week 4
+
+Where to go from here.  How to share code, get help, and create reproducible
+environments.
+
+** Session 1
+
+
+** Session 2
+
+- Git/Github and IDE Integration
+  + Why use version control?
+    - Collaborate with others more easily.
+    - Show others your work.
+
+** Session 3
+
+- The Integrated Development Environment (IDE)
+  + What does an IDE provide?
+    - Code Completion
+  + Git/Github and IDE Integration
+
+- Virtual Environments
+  +  Ensuring compatible python and package versions.
+  +  Anaconda Python
