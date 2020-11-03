@@ -119,13 +119,7 @@ Get data from APIs and use for a somewhat more investments focused exercise.
 
 ** Session 3
 
-- Visualization:
-  + Matplotlib
-  + Seaborn
-  + Plotly
-  + ggplot (using plotnine library)
-
-*** Exercise: 
+*** Exercise: Deposit insurance valuation using (Merton's) option pricing method. (chapter 19, Merton's CTF)
 
 * Week 4
 
@@ -133,6 +127,12 @@ Where to go from here.  How to share code, get help, and create reproducible
 environments.
 
 ** Session 1
+
+- Visualization:
+  + Matplotlib
+  + Seaborn
+  + Plotly
+  + ggplot (using plotnine library)
 
 
 ** Session 2
