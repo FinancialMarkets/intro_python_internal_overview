@@ -78,6 +78,7 @@ Get spreadsheet type data and perform a corporate finance related task.
 
 *** Exercise: PPP Loan Statistics by State
 *** Alternative: What is the average price at which a power plant sells electricity?
+*** Alternative: What is the average on and off-peak real-time fuel mix?
 
 ** Session 3
 
@@ -104,14 +105,17 @@ Get data from APIs and use for a somewhat more investments focused exercise.
   + EIA API.
 - Connecting to databases.
 
-*** Exercise: Markowitz mean-variance portfolio optimization.
+*** Exercise: Pull stock data via API and estimate a Markowitz mean-variance optimal portfolio.
+*** Alternative: Calculate futures prices given options (but we cant get this from API data).
 
 ** Session 2
 
-- Example: Simple Regression, the CAPM.
-- Make it better with pytorch/pyro and the Kalman filter.
+-  An overview of scipy and basic statistics in Python.
+  + Extracting coefficients from an estimated regression model.
 
-*** Exercise: 
+*** Exercise: Calculate market depth via Kyle's lambda. Use Coinbase API to get trades!
+*** Exercise: Create a function which will estimate the beta coefficient for a given stock.
+*** Advanced Exercise: Make it better with pytorch/pyro and the Kalman filter.
 
 #+begin_comment
 - Example: Classification of Failed/Acquired Banks via Neural Network
