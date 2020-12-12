@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-11-11 Wed 12:10 -->
+<!-- 2020-11-28 Sat 20:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>An Intro to Python for Finance</title>
@@ -179,12 +179,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -239,58 +239,59 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org1d151cd">1. Week 1 (Setup)</a>
+<li><a href="#org037d1e6">1. Week 1 (Setup)</a>
 <ul>
-<li><a href="#org40775bc">1.1. Session 1</a></li>
-<li><a href="#org75ca120">1.2. Session 2</a></li>
-<li><a href="#orga0de6ba">1.3. Session 3</a></li>
+<li><a href="#org9ec65fb">1.1. Session 1</a></li>
+<li><a href="#org7f88a06">1.2. Session 2</a></li>
+<li><a href="#org982be57">1.3. Session 3</a></li>
 </ul>
 </li>
-<li><a href="#org54feffb">2. Week 2 (Pandas and Data Description)</a>
+<li><a href="#orgdaeac24">2. Week 2 (Pandas and Data Description)</a>
 <ul>
-<li><a href="#org5f461f1">2.1. Session 1</a>
+<li><a href="#org3d448ea">2.1. Session 1</a>
 <ul>
-<li><a href="#org0a758dd">2.1.1. Exercise: Is there a correlation between industry institutional ownership and return on equity?</a></li>
+<li><a href="#org698f99b">2.1.1. Exercise: Is there a correlation between industry institutional ownership and return on equity?</a></li>
 </ul>
 </li>
-<li><a href="#orga29ab9a">2.2. Session 2</a>
+<li><a href="#orgb14f536">2.2. Session 2</a>
 <ul>
-<li><a href="#org6a1bbd8">2.2.1. Exercise: PPP Loan Statistics by State</a></li>
-<li><a href="#org7f60765">2.2.2. Alternative: What is the average price at which a power plant sells electricity?</a></li>
+<li><a href="#org68ca2fd">2.2.1. Exercise: PPP Loan Statistics by State</a></li>
+<li><a href="#org61310aa">2.2.2. Alternative: What is the average price at which a power plant sells electricity?</a></li>
+<li><a href="#org4911543">2.2.3. Alternative: What is the average on and off-peak real-time fuel mix?</a></li>
 </ul>
 </li>
-<li><a href="#orgeaec730">2.3. Session 3</a>
+<li><a href="#orgd360eb1">2.3. Session 3</a>
 <ul>
-<li><a href="#org3c28656">2.3.1. Exercise: What is the NPV of a Power Plant over a Year?</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgff26f34">3. Week 3 (Numpy/Scipy and APIs)</a>
-<ul>
-<li><a href="#org57abd19">3.1. Session 1</a>
-<ul>
-<li><a href="#org03ad173">3.1.1. Exercise: Pull stock data via API and estimate a Markowitz mean-variance optimal portfolio.</a></li>
-</ul>
-</li>
-<li><a href="#orgd82d33b">3.2. Session 2</a>
-<ul>
-<li><a href="#org63cf351">3.2.1. Exercise: Create a function which will estimate the beta coefficient for a given stock.</a></li>
-<li><a href="#orgbfc5662">3.2.2. Advanced Exercise: Make it better with pytorch/pyro and the Kalman filter.</a></li>
-</ul>
-</li>
-<li><a href="#org3f85d18">3.3. Session 3</a>
-<ul>
-<li><a href="#orgeea358c">3.3.1. Exercise: Deposit insurance valuation using (Merton's) option pricing method. (chapter 19, Merton's CTF)</a></li>
+<li><a href="#org5104471">2.3.1. Exercise: What is the NPV of a Power Plant over a Year?</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org73adfb0">4. Week 4</a>
+<li><a href="#orgc3e458c">3. Week 3 (Numpy/Scipy and APIs)</a>
 <ul>
-<li><a href="#org6d5f4b4">4.1. Session 1</a></li>
-<li><a href="#orge65978c">4.2. Session 2</a></li>
-<li><a href="#orga572003">4.3. Session 3</a></li>
+<li><a href="#org43ae7d2">3.1. Session 1</a>
+<ul>
+<li><a href="#org16f1a9a">3.1.1. Exercise: Pull stock data via API and estimate a Markowitz mean-variance optimal portfolio.</a></li>
+<li><a href="#org69e7663">3.1.2. Alternative: Calculate futures prices given options (but we cant get this from API data).</a></li>
+</ul>
+</li>
+<li><a href="#org8f1e002">3.2. Session 2</a>
+<ul>
+<li><a href="#org2aeaf9f">3.2.1. Exercise: Calculate market depth via Kyle's lambda. Use Coinbase API to get trades!</a></li>
+</ul>
+</li>
+<li><a href="#org296ece2">3.3. Session 3</a>
+<ul>
+<li><a href="#org3a7fbd2">3.3.1. Exercise: Deposit insurance valuation using (Merton's) option pricing method. (chapter 19, Merton's CTF)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9a9b6a0">4. Week 4</a>
+<ul>
+<li><a href="#orgcb1c750">4.1. Session 1</a></li>
+<li><a href="#orgf60fceb">4.2. Session 2</a></li>
+<li><a href="#org97cf325">4.3. Session 3</a></li>
 </ul>
 </li>
 </ul>
@@ -304,12 +305,12 @@ Note most other courses use stock data and create trading algorithms.  Here we a
 We can provide exercises at the end of each session.  The students can complete these in a Jupyter notebook, and we can provide solutions.  Do we want to attempt to grade them?
 </p>
 
-<div id="outline-container-org1d151cd" class="outline-2">
-<h2 id="org1d151cd"><span class="section-number-2">1</span> Week 1 (Setup)</h2>
+<div id="outline-container-org037d1e6" class="outline-2">
+<h2 id="org037d1e6"><span class="section-number-2">1</span> Week 1 (Setup)</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org40775bc" class="outline-3">
-<h3 id="org40775bc"><span class="section-number-3">1.1</span> Session 1</h3>
+<div id="outline-container-org9ec65fb" class="outline-3">
+<h3 id="org9ec65fb"><span class="section-number-3">1.1</span> Session 1</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Course Overview:  
@@ -335,8 +336,8 @@ We can provide exercises at the end of each session.  The students can complete 
 </div>
 </div>
 
-<div id="outline-container-org75ca120" class="outline-3">
-<h3 id="org75ca120"><span class="section-number-3">1.2</span> Session 2</h3>
+<div id="outline-container-org7f88a06" class="outline-3">
+<h3 id="org7f88a06"><span class="section-number-3">1.2</span> Session 2</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>Interacting with Python
@@ -347,6 +348,8 @@ We can provide exercises at the end of each session.  The students can complete 
 <li>Installing and loading packages.</li>
 <li>Sharing notebooks</li>
 </ul></li>
+<li>You are on a Linux Server</li>
+<li>Creating Functions and Time-Value-of-Money calculations.</li>
 <li>Locally
 <ul class="org-ul">
 <li>The REPL</li>
@@ -358,8 +361,8 @@ We can provide exercises at the end of each session.  The students can complete 
 </div>
 
 
-<div id="outline-container-orga0de6ba" class="outline-3">
-<h3 id="orga0de6ba"><span class="section-number-3">1.3</span> Session 3</h3>
+<div id="outline-container-org982be57" class="outline-3">
+<h3 id="org982be57"><span class="section-number-3">1.3</span> Session 3</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 The Python ecosystem.
@@ -395,16 +398,22 @@ The Python ecosystem.
 </div>
 
 
-<div id="outline-container-org54feffb" class="outline-2">
-<h2 id="org54feffb"><span class="section-number-2">2</span> Week 2 (Pandas and Data Description)</h2>
+<div id="outline-container-orgdaeac24" class="outline-2">
+<h2 id="orgdaeac24"><span class="section-number-2">2</span> Week 2 (Pandas and Data Description)</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Get spreadsheet type data and perform a corporate finance related task.
 </p>
 </div>
-<div id="outline-container-org5f461f1" class="outline-3">
-<h3 id="org5f461f1"><span class="section-number-3">2.1</span> Session 1</h3>
+
+
+<div id="outline-container-org3d448ea" class="outline-3">
+<h3 id="org3d448ea"><span class="section-number-3">2.1</span> Session 1</h3>
 <div class="outline-text-3" id="text-2-1">
+<p>
+<a href="https://colab.research.google.com/drive/1KLqsQWbXHYSruQXBAJ1QamsxV9FLDN_R">Colab Notebook</a>
+</p>
+
 <ul class="org-ul">
 <li>An intro to Pandas</li>
 <li>Reading csv and excel files.
@@ -417,14 +426,24 @@ Get spreadsheet type data and perform a corporate finance related task.
 </ul>
 </div>
 
-<div id="outline-container-org0a758dd" class="outline-4">
-<h4 id="org0a758dd"><span class="section-number-4">2.1.1</span> Exercise: Is there a correlation between industry institutional ownership and return on equity?</h4>
+<div id="outline-container-org698f99b" class="outline-4">
+<h4 id="org698f99b"><span class="section-number-4">2.1.1</span> Exercise: Is there a correlation between industry institutional ownership and return on equity?</h4>
 </div>
 </div>
 
-<div id="outline-container-orga29ab9a" class="outline-3">
-<h3 id="orga29ab9a"><span class="section-number-3">2.2</span> Session 2</h3>
+<div id="outline-container-orgb14f536" class="outline-3">
+<h3 id="orgb14f536"><span class="section-number-3">2.2</span> Session 2</h3>
 <div class="outline-text-3" id="text-2-2">
+<p>
+<a href="https://colab.research.google.com/drive/16UVjO2PEQUN5b1JoI__JYfj7K_aMuom7#scrollTo=nBbjWR1JYksh">Colab Notebook</a>
+</p>
+
+<ul class="org-ul">
+<li>Interacting with the OS.</li>
+<li>Append/Concat.</li>
+</ul>
+
+
 <ul class="org-ul">
 <li>Summary Statistics</li>
 <li>Subsetting data</li>
@@ -432,16 +451,19 @@ Get spreadsheet type data and perform a corporate finance related task.
 </ul>
 </div>
 
-<div id="outline-container-org6a1bbd8" class="outline-4">
-<h4 id="org6a1bbd8"><span class="section-number-4">2.2.1</span> Exercise: PPP Loan Statistics by State</h4>
+<div id="outline-container-org68ca2fd" class="outline-4">
+<h4 id="org68ca2fd"><span class="section-number-4">2.2.1</span> Exercise: PPP Loan Statistics by State</h4>
 </div>
-<div id="outline-container-org7f60765" class="outline-4">
-<h4 id="org7f60765"><span class="section-number-4">2.2.2</span> Alternative: What is the average price at which a power plant sells electricity?</h4>
+<div id="outline-container-org61310aa" class="outline-4">
+<h4 id="org61310aa"><span class="section-number-4">2.2.2</span> Alternative: What is the average price at which a power plant sells electricity?</h4>
+</div>
+<div id="outline-container-org4911543" class="outline-4">
+<h4 id="org4911543"><span class="section-number-4">2.2.3</span> Alternative: What is the average on and off-peak real-time fuel mix?</h4>
 </div>
 </div>
 
-<div id="outline-container-orgeaec730" class="outline-3">
-<h3 id="orgeaec730"><span class="section-number-3">2.3</span> Session 3</h3>
+<div id="outline-container-orgd360eb1" class="outline-3">
+<h3 id="orgd360eb1"><span class="section-number-3">2.3</span> Session 3</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>Creating our own functions.</li>
@@ -454,25 +476,29 @@ Connecting to databases here?
 </p>
 </div>
 
-<div id="outline-container-org3c28656" class="outline-4">
-<h4 id="org3c28656"><span class="section-number-4">2.3.1</span> Exercise: What is the NPV of a Power Plant over a Year?</h4>
+<div id="outline-container-org5104471" class="outline-4">
+<h4 id="org5104471"><span class="section-number-4">2.3.1</span> Exercise: What is the NPV of a Power Plant over a Year?</h4>
 </div>
 </div>
 </div>
 
 
 
-<div id="outline-container-orgff26f34" class="outline-2">
-<h2 id="orgff26f34"><span class="section-number-2">3</span> Week 3 (Numpy/Scipy and APIs)</h2>
+<div id="outline-container-orgc3e458c" class="outline-2">
+<h2 id="orgc3e458c"><span class="section-number-2">3</span> Week 3 (Numpy/Scipy and APIs)</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Get data from APIs and use for a somewhat more investments focused exercise.
 </p>
 </div>
 
-<div id="outline-container-org57abd19" class="outline-3">
-<h3 id="org57abd19"><span class="section-number-3">3.1</span> Session 1</h3>
+<div id="outline-container-org43ae7d2" class="outline-3">
+<h3 id="org43ae7d2"><span class="section-number-3">3.1</span> Session 1</h3>
 <div class="outline-text-3" id="text-3-1">
+<p>
+<a href="https://colab.research.google.com/drive/16h1ykVWbb5fL-xRgOrYmYe9SqfrSin1x#scrollTo=4cmbxkCjM1fH">Colab Notebook</a>
+</p>
+
 <ul class="org-ul">
 <li>An introduction to Application Programming Interfaces (APIs) and online
 data
@@ -485,14 +511,21 @@ data
 </ul>
 </div>
 
-<div id="outline-container-org03ad173" class="outline-4">
-<h4 id="org03ad173"><span class="section-number-4">3.1.1</span> Exercise: Pull stock data via API and estimate a Markowitz mean-variance optimal portfolio.</h4>
+<div id="outline-container-org16f1a9a" class="outline-4">
+<h4 id="org16f1a9a"><span class="section-number-4">3.1.1</span> Exercise: Pull stock data via API and estimate a Markowitz mean-variance optimal portfolio.</h4>
+</div>
+<div id="outline-container-org69e7663" class="outline-4">
+<h4 id="org69e7663"><span class="section-number-4">3.1.2</span> Alternative: Calculate futures prices given options (but we cant get this from API data).</h4>
 </div>
 </div>
 
-<div id="outline-container-orgd82d33b" class="outline-3">
-<h3 id="orgd82d33b"><span class="section-number-3">3.2</span> Session 2</h3>
+<div id="outline-container-org8f1e002" class="outline-3">
+<h3 id="org8f1e002"><span class="section-number-3">3.2</span> Session 2</h3>
 <div class="outline-text-3" id="text-3-2">
+<p>
+<a href="https://colab.research.google.com/drive/1GGXpVBhSIypRslVcjWB5TYcexeRxZlyY">Colab Notebook</a>
+</p>
+
 <ul class="org-ul">
 <li>An overview of scipy and basic statistics in Python.
 <ul class="org-ul">
@@ -501,28 +534,29 @@ data
 </ul>
 </div>
 
-<div id="outline-container-org63cf351" class="outline-4">
-<h4 id="org63cf351"><span class="section-number-4">3.2.1</span> Exercise: Create a function which will estimate the beta coefficient for a given stock.</h4>
-</div>
-<div id="outline-container-orgbfc5662" class="outline-4">
-<h4 id="orgbfc5662"><span class="section-number-4">3.2.2</span> Advanced Exercise: Make it better with pytorch/pyro and the Kalman filter.</h4>
-<div class="outline-text-4" id="text-3-2-2">
+<div id="outline-container-org2aeaf9f" class="outline-4">
+<h4 id="org2aeaf9f"><span class="section-number-4">3.2.1</span> Exercise: Calculate market depth via Kyle's lambda. Use Coinbase API to get trades!</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+#*** Exercise: Create a function which will estimate the beta coefficient for a given stock.
+#*** Advanced Exercise: Make it better with pytorch/pyro and the Kalman filter.
+</p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org3f85d18" class="outline-3">
-<h3 id="org3f85d18"><span class="section-number-3">3.3</span> Session 3</h3>
+<div id="outline-container-org296ece2" class="outline-3">
+<h3 id="org296ece2"><span class="section-number-3">3.3</span> Session 3</h3>
 <div class="outline-text-3" id="text-3-3">
 </div>
-<div id="outline-container-orgeea358c" class="outline-4">
-<h4 id="orgeea358c"><span class="section-number-4">3.3.1</span> Exercise: Deposit insurance valuation using (Merton's) option pricing method. (chapter 19, Merton's CTF)</h4>
+<div id="outline-container-org3a7fbd2" class="outline-4">
+<h4 id="org3a7fbd2"><span class="section-number-4">3.3.1</span> Exercise: Deposit insurance valuation using (Merton's) option pricing method. (chapter 19, Merton's CTF)</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org73adfb0" class="outline-2">
-<h2 id="org73adfb0"><span class="section-number-2">4</span> Week 4</h2>
+<div id="outline-container-org9a9b6a0" class="outline-2">
+<h2 id="org9a9b6a0"><span class="section-number-2">4</span> Week 4</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Where to go from here.  How to share code, get help, and create reproducible
@@ -530,8 +564,8 @@ environments.
 </p>
 </div>
 
-<div id="outline-container-org6d5f4b4" class="outline-3">
-<h3 id="org6d5f4b4"><span class="section-number-3">4.1</span> Session 1</h3>
+<div id="outline-container-orgcb1c750" class="outline-3">
+<h3 id="orgcb1c750"><span class="section-number-3">4.1</span> Session 1</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>Visualization:
@@ -546,8 +580,8 @@ environments.
 </div>
 
 
-<div id="outline-container-orge65978c" class="outline-3">
-<h3 id="orge65978c"><span class="section-number-3">4.2</span> Session 2</h3>
+<div id="outline-container-orgf60fceb" class="outline-3">
+<h3 id="orgf60fceb"><span class="section-number-3">4.2</span> Session 2</h3>
 <div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>Git/Github and IDE Integration
@@ -562,8 +596,8 @@ environments.
 </div>
 </div>
 
-<div id="outline-container-orga572003" class="outline-3">
-<h3 id="orga572003"><span class="section-number-3">4.3</span> Session 3</h3>
+<div id="outline-container-org97cf325" class="outline-3">
+<h3 id="org97cf325"><span class="section-number-3">4.3</span> Session 3</h3>
 <div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>The Integrated Development Environment (IDE)
@@ -586,7 +620,7 @@ environments.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2020-11-11 Wed 12:10</p>
+<p class="date">Created: 2020-11-28 Sat 20:14</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

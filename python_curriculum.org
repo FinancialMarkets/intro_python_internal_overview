@@ -1,5 +1,6 @@
 #+title: An Intro to Python for Finance
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+# #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 Note most other courses use stock data and create trading algorithms.  Here we are going to focus on core financial analyst tasks, e.g. what is the average PPP loan size in Texas? These questions are increasingly being answered in Python rather than Excel.
 
@@ -19,10 +20,6 @@ We can provide exercises at the end of each session.  The students can complete 
   + Comparison with R
   + Using Javascript for Visualization
 
--  Python Classes and Object Orientation
-  + What is a Class
-  + Function vs Method:  methods are functions attached to a class
-
 ** Session 2
 
 -  Interacting with Python
@@ -30,9 +27,17 @@ We can provide exercises at the end of each session.  The students can complete 
     - Introduction to markdown
     - Installing and loading packages.
     - Sharing notebooks
+  + You are on a Linux Server
+  + **Creating Functions and Time-Value-of-Money calculations**.
+-  Python Classes and Object Orientation
+  + What is a Class
+  + Function vs Method:  methods are functions attached to a class
+
+#+BEGIN_COMMENT
   + Locally
     - The REPL
     - As a script file
+#+END_COMMENT
 
 
 ** Session 3
@@ -55,12 +60,15 @@ The Python ecosystem.
   + +Installing and Loading.+ ^ already in session 2
   + How to call methods/functions from a package.
 
-- Creating your own functions?
-
 
 * Week 2 (Pandas and Data Description)
 Get spreadsheet type data and perform a corporate finance related task.
+
+
 ** Session 1
+
+[[https://colab.research.google.com/drive/1KLqsQWbXHYSruQXBAJ1QamsxV9FLDN_R][Colab Notebook]]
+
 - An intro to Pandas
 - Reading csv and excel files.
   + Locally and over the web.
@@ -71,6 +79,12 @@ Get spreadsheet type data and perform a corporate finance related task.
 *** Exercise: Is there a correlation between industry institutional ownership and return on equity?
 
 ** Session 2
+
+[[https://colab.research.google.com/drive/16UVjO2PEQUN5b1JoI__JYfj7K_aMuom7#scrollTo=nBbjWR1JYksh][Colab Notebook]]
+
+- Interacting with the OS.
+- Append/Concat.
+
 
 - Summary Statistics
 - Subsetting data
@@ -98,6 +112,8 @@ Get data from APIs and use for a somewhat more investments focused exercise.
 
 ** Session 1
 
+[[https://colab.research.google.com/drive/16h1ykVWbb5fL-xRgOrYmYe9SqfrSin1x#scrollTo=4cmbxkCjM1fH][Colab Notebook]]
+
 - An introduction to Application Programming Interfaces (APIs) and online
   data
   + Example: Coinbase API
@@ -110,18 +126,23 @@ Get data from APIs and use for a somewhat more investments focused exercise.
 
 ** Session 2
 
+[[https://colab.research.google.com/drive/1GGXpVBhSIypRslVcjWB5TYcexeRxZlyY][Colab Notebook]]
+
 -  An overview of scipy and basic statistics in Python.
   + Extracting coefficients from an estimated regression model.
 
 *** Exercise: Calculate market depth via Kyle's lambda. Use Coinbase API to get trades!
-*** Exercise: Create a function which will estimate the beta coefficient for a given stock.
-*** Advanced Exercise: Make it better with pytorch/pyro and the Kalman filter.
+
+#*** Exercise: Create a function which will estimate the beta coefficient for a given stock.
+#*** Advanced Exercise: Make it better with pytorch/pyro and the Kalman filter.
 
 #+begin_comment
 - Example: Classification of Failed/Acquired Banks via Neural Network
 #+end_comment
 
 ** Session 3
+
+
 
 *** Exercise: Deposit insurance valuation using (Merton's) option pricing method. (chapter 19, Merton's CTF)
 
