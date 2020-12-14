@@ -131,10 +131,12 @@ Get data from APIs and use for a somewhat more investments focused exercise.
 -  An overview of scipy and basic statistics in Python.
   + Extracting coefficients from an estimated regression model.
 
-*** Exercise: Calculate market depth via Kyle's lambda. Use Coinbase API to get trades!
+*** Exercise: Calculate market depth via Kyle's lambda. Use Coinbase API to get trades.
 
+#+begin_comment
 #*** Exercise: Create a function which will estimate the beta coefficient for a given stock.
 #*** Advanced Exercise: Make it better with pytorch/pyro and the Kalman filter.
+#+end_comment
 
 #+begin_comment
 - Example: Classification of Failed/Acquired Banks via Neural Network
@@ -142,7 +144,7 @@ Get data from APIs and use for a somewhat more investments focused exercise.
 
 ** Session 3
 
-
+[[https://colab.research.google.com/drive/1u4BUOasPaIVfe8-rD73QXlXmt5EMIMxK][Colab Notebook]]
 
 *** Exercise: Deposit insurance valuation using (Merton's) option pricing method. (chapter 19, Merton's CTF)
 
@@ -153,27 +155,35 @@ environments.
 
 ** Session 1
 
+[[https://colab.research.google.com/drive/1CQ00H_duTY2lhiwzJ041JTPD6BGBdk5y#scrollTo=Z5RfT4TNucfe][Colab Notebook]]
+
 - Visualization:
   + Matplotlib
   + Seaborn
   + Plotly
   + ggplot (using plotnine library)
-
+- Interactive Web Apps via Plotly's Dash
 
 ** Session 2
+
+- The Integrated Development Environment (IDE)
+  + What does an IDE provide?
+    - Code Completion
+    - Linter
+  + Git/Github and IDE Integration
+
+** Session 3
 
 - Git/Github and IDE Integration
   + Why use version control?
     - Collaborate with others more easily.
     - Show others your work.
 
-** Session 3
-
-- The Integrated Development Environment (IDE)
-  + What does an IDE provide?
-    - Code Completion
-  + Git/Github and IDE Integration
+- [[https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb][Github from Colab]]
 
 - Virtual Environments
   +  Ensuring compatible python and package versions.
   +  Anaconda Python
+
+* Bonus Project: The Pairs Trade
+
