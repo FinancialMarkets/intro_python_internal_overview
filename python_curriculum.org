@@ -1,6 +1,5 @@
 #+title: An Intro to Python for Finance
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
-# #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 Note most other courses use stock data and create trading algorithms.  Here we are going to focus on core financial analyst tasks, e.g. what is the average PPP loan size in Texas? These questions are increasingly being answered in Python rather than Excel.
 
@@ -22,13 +21,15 @@ We can provide exercises at the end of each session.  The students can complete 
 
 ** Session 2
 
+[[https://colab.research.google.com/drive/1f2JRrZsZ029JNiPnP_GNiVsyi-e6MXO5][Colab Notebook]]
+
 -  Interacting with Python
   + Google's Colab and Jupyter
     - Introduction to markdown
-    - Installing and loading packages.
     - Sharing notebooks
-  + You are on a Linux Server
-  + **Creating Functions and Time-Value-of-Money calculations**.
+- Creating Functions and Time-Value-of-Money calculations
+- Basic control flow
+  + The importance of indentation
 -  Python Classes and Object Orientation
   + What is a Class
   + Function vs Method:  methods are functions attached to a class
@@ -39,11 +40,13 @@ We can provide exercises at the end of each session.  The students can complete 
     - As a script file
 #+END_COMMENT
 
-
 ** Session 3
+
+[[https://colab.research.google.com/drive/12QKdTc3ulsEQ2cAdmbhq5RkTx9oB1YZ_][Colab Notebook]]
 
 The Python ecosystem.
 
+- You are on a Linux Server
 -  An Introduction to Useful Packages:
   + [[https://pandas.pydata.org/][Pandas]]
   + [[https://numpy.org/][Numpy]]
@@ -57,7 +60,7 @@ The Python ecosystem.
 - Python Packages
   + Extending the core language
   + Our most used packages.
-  + +Installing and Loading.+ ^ already in session 2
+  + Installing and Loading.
   + How to call methods/functions from a package.
 
 
@@ -82,28 +85,36 @@ Get spreadsheet type data and perform a corporate finance related task.
 
 [[https://colab.research.google.com/drive/16UVjO2PEQUN5b1JoI__JYfj7K_aMuom7#scrollTo=nBbjWR1JYksh][Colab Notebook]]
 
+*** Exercise: What is the average on and off-peak real-time fuel mix?
+
+#+begin_comment
+Finish notebook and summarize what was learned.
 - Interacting with the OS.
 - Append/Concat.
-
-
 - Summary Statistics
 - Subsetting data
 - Pivot Tables
+#+end_comment
 
-*** Exercise: PPP Loan Statistics by State
-*** Alternative: What is the average price at which a power plant sells electricity?
-*** Alternative: What is the average on and off-peak real-time fuel mix?
+#+begin_comment
+Alternative Exercises:
+ PPP Loan Statistics by State
+ What is the average price at which a power plant sells electricity?
+#+end_comment
 
 ** Session 3
 
-- Creating our own functions.
-- Time value of money calculations.
-- Should we go with the full set of steps to create the PPP data set?
-
-Connecting to databases here?
+[[https://colab.research.google.com/drive/18axbgTGt66R7fXa3tsiErQMoyb8m-AJD][Colab Notebook]]
 
 *** Exercise: What is the NPV of a Power Plant over a Year?
 
+#+begin_comment
+Finish notebook and summarize what was learned.
+- Creating our own functions.
+- Time value of money calculations.
+- Should we go with the full set of steps to create the PPP data set?
+Connecting to databases here?
+#+end_comment
 
 
 * Week 3 (Numpy/Scipy and APIs)
@@ -187,3 +198,4 @@ environments.
 
 * Bonus Project: The Pairs Trade
 
+* Bonus Project: Classify Failed Banks with a Deep Neural Network
