@@ -5,9 +5,19 @@ Note most other courses use stock data and create trading algorithms.  Here we a
 
 We can provide exercises at the end of each session.  The students can complete these in a Jupyter notebook, and we can provide solutions.  Do we want to attempt to grade them?
 
-* Week 1 (Setup)
+* Introduction
 
-** Session 1
+** About the Course
+
+** About the Instructors
+
+*** Carole Biau
+
+*** Matt Brigida
+
+* Week 0 (Setup)
+
+** Session 0
 
 - Course Overview:  
   + What we will cover in the course.  
@@ -19,10 +29,11 @@ We can provide exercises at the end of each session.  The students can complete 
   + Comparison with R
   + Using Javascript for Visualization
 
-** Session 2
+** Session 1
 
 [[https://colab.research.google.com/drive/1f2JRrZsZ029JNiPnP_GNiVsyi-e6MXO5][Colab Notebook]]
 
+- You are on a Linux Server
 -  Interacting with Python
   + Google's Colab and Jupyter
     - Introduction to markdown
@@ -30,9 +41,6 @@ We can provide exercises at the end of each session.  The students can complete 
 - Creating Functions and Time-Value-of-Money calculations
 - Basic control flow
   + The importance of indentation
--  Python Classes and Object Orientation
-  + What is a Class
-  + Function vs Method:  methods are functions attached to a class
 
 #+BEGIN_COMMENT
   + Locally
@@ -40,13 +48,12 @@ We can provide exercises at the end of each session.  The students can complete 
     - As a script file
 #+END_COMMENT
 
-** Session 3
+** Session 2
 
 [[https://colab.research.google.com/drive/12QKdTc3ulsEQ2cAdmbhq5RkTx9oB1YZ_][Colab Notebook]]
 
 The Python ecosystem.
 
-- You are on a Linux Server
 -  An Introduction to Useful Packages:
   + [[https://pandas.pydata.org/][Pandas]]
   + [[https://numpy.org/][Numpy]]
@@ -63,12 +70,17 @@ The Python ecosystem.
   + Installing and Loading.
   + How to call methods/functions from a package.
 
+-  Python Classes and Object Orientation
+  + What is a Class
+  + Function vs Method:  methods are functions attached to a class
 
-* Week 2 (Pandas and Data Description)
+
+
+* Week 1 (Pandas and Data Description)
 Get spreadsheet type data and perform a corporate finance related task.
 
 
-** Session 1
+** Session 0
 
 [[https://colab.research.google.com/drive/1KLqsQWbXHYSruQXBAJ1QamsxV9FLDN_R][Colab Notebook]]
 
@@ -81,7 +93,7 @@ Get spreadsheet type data and perform a corporate finance related task.
 
 *** Exercise: Is there a correlation between industry institutional ownership and return on equity?
 
-** Session 2
+** Session 1
 
 [[https://colab.research.google.com/drive/16UVjO2PEQUN5b1JoI__JYfj7K_aMuom7#scrollTo=nBbjWR1JYksh][Colab Notebook]]
 
@@ -102,7 +114,7 @@ Alternative Exercises:
  What is the average price at which a power plant sells electricity?
 #+end_comment
 
-** Session 3
+** Session 2
 
 [[https://colab.research.google.com/drive/18axbgTGt66R7fXa3tsiErQMoyb8m-AJD][Colab Notebook]]
 
@@ -117,11 +129,11 @@ Connecting to databases here?
 #+end_comment
 
 
-* Week 3 (Numpy/Scipy and APIs)
+* Week 2 (Numpy/Scipy and APIs)
   
 Get data from APIs and use for a somewhat more investments focused exercise.
 
-** Session 1
+** Session 0
 
 [[https://colab.research.google.com/drive/16h1ykVWbb5fL-xRgOrYmYe9SqfrSin1x#scrollTo=4cmbxkCjM1fH][Colab Notebook]]
 
@@ -135,7 +147,7 @@ Get data from APIs and use for a somewhat more investments focused exercise.
 *** Exercise: Pull stock data via API and estimate a Markowitz mean-variance optimal portfolio.
 *** Alternative: Calculate futures prices given options (but we cant get this from API data).
 
-** Session 2
+** Session 1
 
 [[https://colab.research.google.com/drive/1GGXpVBhSIypRslVcjWB5TYcexeRxZlyY][Colab Notebook]]
 
@@ -153,18 +165,27 @@ Get data from APIs and use for a somewhat more investments focused exercise.
 - Example: Classification of Failed/Acquired Banks via Neural Network
 #+end_comment
 
-** Session 3
+** Session 2
 
 [[https://colab.research.google.com/drive/1u4BUOasPaIVfe8-rD73QXlXmt5EMIMxK][Colab Notebook]]
 
 *** Exercise: Deposit insurance valuation using (Merton's) option pricing method. (chapter 19, Merton's CTF)
 
-* Week 4
+** Session 3
+
+The previous sections have used data available online through APIs and simple files.  Commonly the financial analyst will have to query relational (SQL) databases.  In this section we'll cover the basics of connecting to a SQL database in Python, and executing SQL queries.  The resulting data table will, of course, be imported back into Python.
+
+-  Good website to learn SQL (MySQL): [[https://www.db-fiddle.com/][db-fiddle]]
+
+A quick project using SQL.  Is there an online SQL database we can query?  Should we just put the FDIC one online?
+
+
+* Week 3
 
 Where to go from here.  How to share code, get help, and create reproducible
 environments.
 
-** Session 1
+** Session 0
 
 [[https://colab.research.google.com/drive/1CQ00H_duTY2lhiwzJ041JTPD6BGBdk5y#scrollTo=Z5RfT4TNucfe][Colab Notebook]]
 
@@ -175,7 +196,7 @@ environments.
   + ggplot (using plotnine library)
 - Interactive Web Apps via Plotly's Dash
 
-** Session 2
+** Session 1
 
 - The Integrated Development Environment (IDE)
   + What does an IDE provide?
@@ -183,7 +204,7 @@ environments.
     - Linter
   + Git/Github and IDE Integration
 
-** Session 3
+** Session 2
 
 - Git/Github and IDE Integration
   + Why use version control?
@@ -195,6 +216,10 @@ environments.
 - Virtual Environments
   +  Ensuring compatible python and package versions.
   +  Anaconda Python
+
+* Conclusion
+
+
 
 * Bonus Project: The Pairs Trade
 
