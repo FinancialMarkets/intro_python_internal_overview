@@ -173,6 +173,8 @@ Get data from APIs and use for a somewhat more investments focused exercise.
 
 ** Session 3
 
+[[https://colab.research.google.com/drive/1TWjqlgTp1Fyyy_ykp48LBVFWjRqtBwzo][Colab Notebook]]
+
 The previous sections have used data available online through APIs and simple files.  Commonly the financial analyst will have to query relational (SQL) databases.  In this section we'll cover the basics of connecting to a SQL database in Python, and executing SQL queries.  The resulting data table will, of course, be imported back into Python.
 
 -  Good website to learn SQL (MySQL): [[https://www.db-fiddle.com/][db-fiddle]]
@@ -204,7 +206,14 @@ environments.
     - Linter
   + Git/Github and IDE Integration
 
+- Virtual Environments
+  +  Ensuring compatible python and package versions.
+  +  Anaconda Python
+
+
 ** Session 2
+
+[[https://colab.research.google.com/drive/1599E3ppEqm0Y0wAaMSm6CXWZtQW6fBNr#scrollTo=nAUGkiWESjX_][Colab Notebook]]
 
 - Git/Github and IDE Integration
   + Why use version control?
@@ -213,14 +222,17 @@ environments.
 
 - [[https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb][Github from Colab]]
 
-- Virtual Environments
-  +  Ensuring compatible python and package versions.
-  +  Anaconda Python
 
 * Conclusion
 
 
 
 * Bonus Project: The Pairs Trade
-
 * Bonus Project: Classify Failed Banks with a Deep Neural Network
+* Bonus Project: Calculate Performance Measures for Various ETFs (Sharpe, Information ratios, etc)
+
+[[https://colab.research.google.com/drive/1WT7Wb9o24JxoQVKN429MVYfBdE9UzzY8#scrollTo=ZpTjfSSiKh8P][Colab Notebook]]
+
+- Look at actively vs passively managed ETFs (ARKK vs SPY).
+- Look at sector vs broad index ETFs.
+- Look at leveraged vs non-leveraged ETFs.
