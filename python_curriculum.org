@@ -9,6 +9,8 @@ We can provide exercises at the end of each session.  The students can complete 
 
 ** About the Course
 
+This is a course in Python for people who work in finance.
+
 ** About the Instructors
 
 *** Carole Biau
@@ -33,65 +35,45 @@ We can provide exercises at the end of each session.  The students can complete 
 
 [[https://colab.research.google.com/drive/1f2JRrZsZ029JNiPnP_GNiVsyi-e6MXO5][Colab Notebook]]
 
-- You are on a Linux Server
 -  Interacting with Python
   + Google's Colab and Jupyter
     - Introduction to markdown
     - Sharing notebooks
+- Intro to the Linux Server
 - Creating Functions and Time-Value-of-Money calculations
 - Basic control flow
   + The importance of indentation
-
-#+BEGIN_COMMENT
-  + Locally
-    - The REPL
-    - As a script file
-#+END_COMMENT
 
 ** Session 2
 
 [[https://colab.research.google.com/drive/12QKdTc3ulsEQ2cAdmbhq5RkTx9oB1YZ_][Colab Notebook]]
 
-The Python ecosystem.
-
--  An Introduction to Useful Packages:
-  + [[https://pandas.pydata.org/][Pandas]]
-  + [[https://numpy.org/][Numpy]]
-  + Scipy and Scikit Learn
-  + Pytorch
-  + Tensorflow and Keras 
-
-- Finding Packages
-  + pip
+Sharing code and the Python ecosystem.  
 
 - Python Packages
   + Extending the core language
   + Our most used packages.
   + Installing and Loading.
   + How to call methods/functions from a package.
-
--  Python Classes and Object Orientation
-  + What is a Class
-  + Function vs Method:  methods are functions attached to a class
-
-
+  + Package security.
 
 * Week 1 (Pandas and Data Description)
-Get spreadsheet type data and perform a corporate finance related task.
 
+Get spreadsheet type data and perform corporate finance related tasks.
 
 ** Session 0
 
 [[https://colab.research.google.com/drive/1KLqsQWbXHYSruQXBAJ1QamsxV9FLDN_R][Colab Notebook]]
 
+*** Exercise: Is there a correlation between industry institutional ownership and return on equity?
+
 - An intro to Pandas
-- Reading csv and excel files.
-  + Locally and over the web.
+- Reading csv and excel files over http.
+- Data cleaning.
 - Inspecting the objects
 - Determining dataframe size and the column types.
 - Adding new columns
-
-*** Exercise: Is there a correlation between industry institutional ownership and return on equity?
+- A note of functions vs methods.
 
 ** Session 1
 
@@ -99,26 +81,25 @@ Get spreadsheet type data and perform a corporate finance related task.
 
 *** Exercise: What is the average on and off-peak real-time fuel mix?
 
-#+begin_comment
-Finish notebook and summarize what was learned.
-- Interacting with the OS.
-- Append/Concat.
-- Summary Statistics
-- Subsetting data
-- Pivot Tables
-#+end_comment
+- Dates in Pandas.
+- Interacting with the operating system from Python.
+- Summarizing by creating group means, etc.
 
 #+begin_comment
 Alternative Exercises:
  PPP Loan Statistics by State
  What is the average price at which a power plant sells electricity?
+ What is the NPV of a Power Plant over a Year?
 #+end_comment
 
 ** Session 2
 
 [[https://colab.research.google.com/drive/18axbgTGt66R7fXa3tsiErQMoyb8m-AJD][Colab Notebook]]
 
-*** Exercise: What is the NPV of a Power Plant over a Year?
+*** Exercise: Where were the PPP loans made?
+
+- Filtering DataFrames
+- Pivot Tables
 
 #+begin_comment
 Finish notebook and summarize what was learned.
