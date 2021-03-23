@@ -103,12 +103,11 @@ Connecting to databases here?
 
 [[https://colab.research.google.com/drive/1TWjqlgTp1Fyyy_ykp48LBVFWjRqtBwzo][Colab Notebook]]
 
-The previous sections have used data available online through APIs and simple files.  Commonly the financial analyst will have to query relational (SQL) databases.  In this section we'll cover the basics of connecting to a SQL database in Python, and executing SQL queries.  The resulting data table will, of course, be imported back into Python.
+The previous sections have used data available online through APIs and flat files.  Commonly the financial analyst will have to query relational (SQL) databases.  In this section we'll cover the basics of connecting to a SQL database in Python, and executing SQL queries, and returning the data as a Pandas /DataFrame/.
 
+#+BEGIN_COMMENT
 -  Good website to learn SQL (MySQL): [[https://www.db-fiddle.com/][db-fiddle]]
-
-A quick project using SQL.  Is there an online SQL database we can query?  Should we just put the FDIC one online?
-
+#+END_COMMENT
 
 * Module 2 (Numpy/Scipy and APIs)
   
