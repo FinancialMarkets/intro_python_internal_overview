@@ -16,7 +16,6 @@ We can provide exercises at the end of each session.  The students can complete 
 - Course Overview:  
   + What we will cover in the course.  
   + The use of Python in finance.
-
 - Python Relative to other tools.
   + Excel
   + Other Programming Languages
@@ -34,7 +33,7 @@ We can provide exercises at the end of each session.  The students can complete 
 - Intro to the Linux Server
 - Creating Functions and Time-Value-of-Money calculations
 - Basic control flow
-  + The importance of indentation
+- The importance of indentation
 
 ** Session 2
 
@@ -156,7 +155,7 @@ This module focuses on using scientific computing libraries such as Numpy Scipy 
 
 * Module 3
 
-Where to go from here.  How to share code, get help, and create reproducible
+This module focuses on showcasing your work via visualizations, sharing code via git and GitHub, and .  How to share code, get help, and create reproducible
 environments.
 
 ** Session 0
@@ -182,7 +181,6 @@ environments.
   +  Ensuring compatible python and package versions.
   +  Anaconda Python
 
-
 ** Session 2
 
 [[https://colab.research.google.com/drive/1599E3ppEqm0Y0wAaMSm6CXWZtQW6fBNr#scrollTo=nAUGkiWESjX_][Colab Notebook]]
@@ -192,12 +190,15 @@ environments.
     - Collaborate with others more easily.
     - Show others your work.
 
+#+BEGIN_COMMENT
 - [[https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb][Github from Colab]]
-
+#+END_COMMENT
 
 * Bonus Project: Predict Small Business Loans with a Deep Neural Network
 
-Colab Notebook
+[[https://colab.research.google.com/drive/1QUyAsBdFEoHqLUZduy9IeS7Er_lyczkU?usp=sharing][Colab Notebook]]
+
+-  Intro to Machine Learning and Tensorflow 
 
 * Bonus Project: Calculate Performance Measures for Various ETFs (Sharpe, Information ratios, etc)
 
