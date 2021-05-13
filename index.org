@@ -1,5 +1,6 @@
 #+title: An Intro to Python for Finance
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
 
 #+BEGIN_COMMENT
 Note most other courses use stock data and create trading algorithms.  Here we are going to focus on core financial analyst tasks, e.g. what is the average PPP loan size in Texas? These questions are increasingly being answered in Python rather than Excel.
